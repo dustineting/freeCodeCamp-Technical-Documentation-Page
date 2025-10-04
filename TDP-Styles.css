@@ -1,0 +1,131 @@
+/* HTML Default Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E0E0E0;
+    color: #202020; 
+    font-family: Archivo, sans-serif;
+    line-height: 1.5;
+}
+
+/* Side Navigation */
+#navbar {
+    background-color: #F0F0F0;
+    border-right: 2px solid #E0E0E0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    padding: 20px;
+}
+
+#navbar header {
+    color: #005000;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#navbar .nav-link {
+    color: #202020;
+    display: block;
+    padding: 10px 5px;
+    text-decoration: none;
+    border-bottom: 1px solid #D0D0D0;
+}
+
+#navbar .nav-link:hover {
+    color: #F0F0F0;
+    background-color: #005000;
+}
+
+/* Main Content */
+#main-doc {
+    margin-left: 320px;
+    padding: 20px;
+    max-width: 1180px;
+}
+
+/* Section Headers */
+.main-section header {
+    color: #F0F0F0;
+    background-color: #005000;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 20px 0 10px;
+    border-bottom: 1px solid #808080;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 12px;
+}
+
+/* Lists */
+ul, dl {
+    margin: 15px 0;
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+dd {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+/* Code Styles */
+code {
+    background: #F5F5F5;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: Consolas, monospace;
+    font-size: 1em;
+}
+
+/* Code Blocks */
+p.code {
+    background: #F5F5F5;
+    padding: 8px;
+    border-left: 3px solid #007000;
+    font-family: Consolas, monospace;
+}
+
+/* Links */
+a {
+    color: #004E9D;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Media Query */
+@media (max-width: 800px) {
+    #navbar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 2px solid #D0D0D0;
+    }
+
+    #main-doc {
+        margin-left: 0;
+    }
+}
